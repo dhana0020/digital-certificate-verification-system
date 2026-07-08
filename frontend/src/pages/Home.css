@@ -1,0 +1,129 @@
+.home-page {
+  min-height: 100vh;
+  position: relative;
+  background: linear-gradient(135deg, #f8fbff, #eef4ff);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+  box-sizing: border-box;
+}
+
+/* Header */
+.home-header {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+}
+
+.admin-btn {
+  padding: 10px 20px;
+  border-radius: 12px;
+  background: transparent;
+  border: 2px solid #2563eb;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.admin-btn:hover {
+  background: #2563eb;
+  color: white;
+}
+
+/* Hero Card */
+.hero-section {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 24px;
+
+  width: 100%;
+  max-width: 850px;
+
+  padding: 60px;
+  box-sizing: border-box;
+}
+
+/* Footer */
+.footer {
+  position: fixed;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 14px;
+  color: #6b7280;
+  font-weight: 500;
+  width: 90%;
+}
+
+/* ===========================
+   Tablet
+=========================== */
+@media (max-width: 768px) {
+
+  .home-header {
+    top: 20px;
+    right: 20px;
+  }
+
+  .admin-btn {
+    padding: 9px 18px;
+    font-size: 14px;
+  }
+
+  .hero-section {
+    padding: 40px 30px;
+    border-radius: 20px;
+  }
+
+  .footer {
+    font-size: 13px;
+  }
+}
+
+/* ===========================
+   Mobile
+=========================== */
+@media (max-width: 480px) {
+
+  .home-page {
+    padding: 90px 16px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home-header {
+    position: static;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .admin-btn {
+    width: 170px;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .hero-section {
+    width: 100%;
+    padding: 28px 20px;
+    border-radius: 18px;
+  }
+
+  .footer {
+    position: static;
+    transform: none;
+    margin-top: 25px;
+    text-align: center;
+    font-size: 12px;
+  }
+}
